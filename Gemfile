@@ -34,3 +34,9 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :production do
+  # http://stackoverflow.com/questions/7296683/rails-3-1-pushing-to-heroku-errors-installing-postgres-adapter
+  # gems specifically for Heroku go here
+  gem "pg"
+end
